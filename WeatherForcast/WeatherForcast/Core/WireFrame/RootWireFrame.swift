@@ -28,7 +28,7 @@ class RootWireframe {
 
 	func setUpHomeScreen(window: UIWindow) {
 		let cityWeather = CityWeatherScreenRouter.createModule()
-		landingScreenNavigationController.isNavigationBarHidden = false
+		landingScreenNavigationController.isNavigationBarHidden = true
 		landingScreenNavigationController.viewControllers = [cityWeather]
 		window.rootViewController = landingScreenNavigationController
 	}

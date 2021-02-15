@@ -46,4 +46,8 @@ class BaseViewController: UIViewController {
 		indicatorView.isHidden = true
 	}
 
+	func userDidSearchCity(name: String) {
+		
+	}
+	
 }

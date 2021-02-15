@@ -8,11 +8,11 @@
 import Foundation
 
 protocol EnvironmentProtocol {
-	var newYorkTimeUrlString: String { get }
+	var weatherUrlString: String { get }
 }
 
 extension EnvironmentProtocol {
-	var newYorkTimeUrlString: String {
-		Environment.shared.newYorkTimeUrlString
+	var weatherUrlString: String {
+		Environment.shared.weatherUrlString
 	}
 }

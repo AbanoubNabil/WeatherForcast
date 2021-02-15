@@ -14,6 +14,7 @@ class CityWeatherScreenRouter: CityWeatherScreenWireframeProtocol {
     static func createModule() -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = CityWeatherScreenViewController(nibName: nil, bundle: nil)
+		view.navigationController?.setNavigationBarHidden(true, animated: false)
         let interactor = CityWeatherScreenInteractor()
         let router = CityWeatherScreenRouter()
         let presenter = CityWeatherScreenPresenter(interface: view, interactor: interactor, router: router)
